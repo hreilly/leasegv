@@ -13,6 +13,17 @@ body {
 * {
     max-width: 60ch;
 }
+html,
+body,
+div,
+header,
+nav,
+main,
+img,
+section,
+footer {
+  max-width: none;
+}
 
 /*-------------------------*\
     STRUCTURE
