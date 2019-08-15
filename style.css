@@ -10,6 +10,9 @@ body {
     --dark-bg-color: #242524;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .2);
 }
+* {
+    max-width: 60ch;
+}
 
 /*-------------------------*\
     STRUCTURE
