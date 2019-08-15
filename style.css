@@ -7,3 +7,20 @@
 /*-------------------------*\
     STRUCTURE
 \*-------------------------*/
+
+nav {
+    height: 5vh;
+    min-height: 80px;
+    max-height: 120px;
+    width: 100vw;
+    margin: 0;
+    padding: 15px;
+}
+
+/*-------------------------*\
+    AESTHETICS
+\*-------------------------*/
+
+nav {
+    background-color: #242524;
+}
