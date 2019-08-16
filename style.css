@@ -7,12 +7,15 @@ body {
     padding: 0;
 }
 :root {
+    font-size: calc(1rem + 0.25vw);
     --dark-bg-color: #242524;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .2);
-    --max-characters: 60ch;
-    --main-font: 'Nanum Gothic', sans-serif;
+    --max-characters: 70ch;
+    --main-font: 'Roboto', sans-serif;
+    --accent-font: 'Noto Sans', sans-serif;
 }
 * {
+    font-family: var(--main-font);
     max-width: var(--max-characters);
 }
 html,
@@ -50,6 +53,9 @@ footer {
 .main-content img {
     margin: 0 auto;
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin: auto;
+}
 
 /*-------------------------*\
     AESTHETICS
@@ -64,6 +70,36 @@ footer {
 .main-content img {
     box-shadow: var(--element-shadow);
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--accent-font);
+}
+h1 {
+    font-size: calc(1.5rem + 0.5vw);
+    font-weight: 700;
+}
 p {
     font-family: var(--main-font);
+    line-height: 2.75ex;
+    font-weight: 300;
+}
+
+/*-------------------------*\
+    CASCADE
+\*-------------------------*/
+
+.description_header {
+    margin-bottom: 2.5ex;
+}
+.description_text {
+    text-align: left;
+    margin-bottom: 5ex;
+}
+.disclaimer {
+    font-family: var(--main-font);
+    font-size: calc(.4rem + .2vw);
+    color: #f2f2f2;
+    padding: 5ex;
+    font-style: italic;
+    max-width: 1280px;
+    margin: auto;
 }
