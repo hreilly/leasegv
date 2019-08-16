@@ -9,9 +9,11 @@ body {
 :root {
     --dark-bg-color: #242524;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .2);
+    --max-characters: 60ch;
+    --main-font: 'Nanum Gothic', sans-serif;
 }
 * {
-    max-width: 60ch;
+    max-width: var(--max-characters);
 }
 html,
 body,
@@ -61,4 +63,7 @@ footer {
 }
 .main-content img {
     box-shadow: var(--element-shadow);
+}
+p {
+    font-family: var(--main-font);
 }
