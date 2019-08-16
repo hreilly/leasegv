@@ -9,6 +9,8 @@ body {
 :root {
     font-size: calc(1rem + 0.25vw);
     --dark-color: #2a2726;
+    --light-color: #f2efeb;
+    --accent-color: #cad2d2;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .3);
     --max-characters: 70ch;
     --main-font: 'Roboto', sans-serif;
@@ -18,6 +20,7 @@ body {
     font-family: var(--main-font);
     max-width: var(--max-characters);
     color: var(--dark-color);
+    background-color: var(--light-color);
 }
 html,
 body,
@@ -62,11 +65,11 @@ h1, h2, h3, h4, h5, h6, p {
     AESTHETICS
 \*-------------------------*/
 
-nav {
-    background-color: var(--dark-color);
+nav, nav * {
+    background-color: var(--accent-color);
 }
-footer {
-    background-color: var(--dark-color);
+footer, footer * {
+    background-color: var(--accent-color);
 }
 .main-content img {
     box-shadow: var(--element-shadow);
@@ -80,7 +83,7 @@ h1 {
 }
 p {
     font-family: var(--main-font);
-    line-height: 2.75ex;
+    line-height: 2.85ex;
     font-weight: 300;
 }
 p:first-letter {
@@ -92,7 +95,7 @@ p:first-letter {
   
     font-size: 4rem;
     float: left;
-    line-height: 1;
+    line-height: 2ex;
 }
 
 /*-------------------------*\
