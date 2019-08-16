@@ -9,7 +9,7 @@ body {
 :root {
     font-size: calc(1rem + 0.25vw);
     --dark-bg-color: #242524;
-    --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .2);
+    --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .3);
     --max-characters: 70ch;
     --main-font: 'Roboto', sans-serif;
     --accent-font: 'Noto Sans', sans-serif;
@@ -27,7 +27,7 @@ main,
 img,
 section,
 footer {
-  max-width: none;
+  max-width: 100%;
 }
 
 /*-------------------------*\
@@ -88,11 +88,11 @@ p {
 \*-------------------------*/
 
 .description_header {
-    margin-bottom: 2.5ex;
+    margin: 2.5ex auto;
 }
 .description_text {
     text-align: left;
-    margin-bottom: 5ex;
+    margin: 5ex auto;
 }
 .disclaimer {
     font-family: var(--main-font);
