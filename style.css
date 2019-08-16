@@ -9,6 +9,7 @@ body {
 :root {
     font-size: calc(1rem + 0.25vw);
     --dark-color: #2a2726;
+    --medium-color: #7e8082;
     --light-color: #f2efeb;
     --accent-color: #cad2d2;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .3);
@@ -42,9 +43,15 @@ nav {
     height: 5vh;
     min-height: 80px;
     max-height: 120px;
-    width: 100vw;
-    margin: 0;
-    padding: 0px;
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: auto;
+}
+.nav-wrapper {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    height: 100%;
 }
 footer {
     margin-bottom: 0;
@@ -66,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p {
 \*-------------------------*/
 
 nav, nav * {
-    background-color: var(--accent-color);
+    background-color: var(--medium-color);
 }
 footer, footer * {
     background-color: var(--accent-color);
@@ -96,6 +103,30 @@ p:first-letter {
     font-size: 4rem;
     float: left;
     line-height: 2ex;
+}
+.main_button {
+    border-width: 0px;
+    border-radius: 30px;
+    font-family: var(--accent-font);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin: auto;
+    cursor: pointer;
+    font-size: calc(.8rem + .1vw);
+}
+.light_button {
+    background-color: var(--accent-color);
+}
+.light_button:hover {
+    background-color: var(--light-color);
+    transition: .2s;
+}
+nav .main_button {
+    margin: auto 0 auto auto;
+}
+nav img {
+    margin: auto auto auto 0;
 }
 
 /*-------------------------*\
