@@ -8,7 +8,7 @@ body {
 }
 :root {
     font-size: calc(1rem + 0.25vw);
-    --dark-bg-color: #242524;
+    --dark-color: #2a2726;
     --element-shadow: 1px 1px 5px rgba(0 ,0 ,0 , .3);
     --max-characters: 70ch;
     --main-font: 'Roboto', sans-serif;
@@ -17,6 +17,7 @@ body {
 * {
     font-family: var(--main-font);
     max-width: var(--max-characters);
+    color: var(--dark-color);
 }
 html,
 body,
@@ -62,10 +63,10 @@ h1, h2, h3, h4, h5, h6, p {
 \*-------------------------*/
 
 nav {
-    background-color: var(--dark-bg-color);
+    background-color: var(--dark-color);
 }
 footer {
-    background-color: var(--dark-bg-color);
+    background-color: var(--dark-color);
 }
 .main-content img {
     box-shadow: var(--element-shadow);
@@ -81,6 +82,17 @@ p {
     font-family: var(--main-font);
     line-height: 2.75ex;
     font-weight: 300;
+}
+p:first-letter {
+    color: #7e8082;
+    padding: 0 .3rem;
+    margin: 0 .3rem 0 0;
+    border: 2px solid;
+    border-radius: 2px;
+  
+    font-size: 4rem;
+    float: left;
+    line-height: 1;
 }
 
 /*-------------------------*\
